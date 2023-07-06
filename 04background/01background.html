@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Properety</title>
+    <style>
+        div {
+            width: 100%;
+            height: 800px;
+            font-size: 25px;
+        }
+
+        .background-attachment {
+            border: 5px solid darksalmon;
+            background-image: url(../../CSS/image/contact.jpg);
+            /* background-attachment: fixed; */
+            background-size: 700px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .background-clip {
+            border: 5px solid darksalmon;
+            background-image: url(../../CSS/image/background.png);
+            background-size: cover;
+            background-clip: border-box;
+            background-clip: content-box;
+            padding: 10px;
+
+        }
+
+        .background-origin {
+            border: 5px solid darksalmon;
+            background-image: url(../../CSS/image/background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-origin: border-box;
+            background-origin: content-box;
+        }
+
+        .background-color {
+            border: 5px solid darksalmon;
+            background-color: blueviolet;
+
+        }
+
+        .background-image {
+            border: 5px solid darksalmon;
+            background-image: url(../image/background.png);
+        }
+
+        .background-position {
+            border: 5px solid darksalmon;
+            background-image: url(../image/background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-position: 100% 100%;
+
+        }
+
+        .background-repeat {
+            border: 5px solid darksalmon;
+            background-image: url(../image/background.png);
+            /* background-repeat: no-repeat; */
+            /* background-repeat: repeat-x; */
+            background-repeat: repeat-y;
+            background-repeat: space;
+            /* background-repeat: round; */
+            /* background-size: 100px; */
+        }
+
+        .background-size {
+            border: 5px solid darksalmon;
+            background-image: url(../image/background.png);
+            /* background-size: 50px; */
+            /* background-size: contain; */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .Shorthand-background {
+            border: 5px solid darksalmon;
+            background: url(../image/background.png)
+            top center / 300px 300px /* position / size */
+            no-repeat                /* repeat */
+            /* fixed                    attachment */
+            padding-box              /* origin */
+            content-box              /* clip */
+            lightslategray
+
+        }
+
+        .Multiple-background {
+            border: 5px solid darksalmon;
+            background-image: url(../image/background.png),url(../image/contact.jpg);
+            background-repeat: no-repeat, no-repeat;
+            background-position: center right, center;
+            background-size: 500px 500px, cover;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Background In CSS</h1>
+    <ul>
+        <li>background-attachment</li>
+        <li>background-clip</li>
+        <li>background-origin</li>
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-position</li>
+        <li>background-repeat</li>
+        <li>background-size</li>
+        <li>Shorthand-background</li>
+        <li>Multiple-background</li>
+        <hr>
+    </ul>
+
+    <div class="background-attachment">background-attachment</div> <br>
+    <div class="background-clip">background-clip</div> <br>
+    <div class="background-origin">background-origin</div> <br>
+    <div class="background-color">background-color</div> <br>
+    <div class="background-image">background-image</div> <br>
+    <div class="background-position">background-position</div> <br>
+    <div class="background-repeat">background-repeat</div> <br>
+    <div class="background-size">background-size</div> <br>
+    <div class="Shorthand-background">Shorthand-background</div> <br>
+    <div class="Multiple-background">Multiple-background</div> <br>
+</body>
+
+</html>
