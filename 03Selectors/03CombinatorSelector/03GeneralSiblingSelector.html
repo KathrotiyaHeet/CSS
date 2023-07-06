@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling Selector</title>
+    <style>
+        .parent~p{
+            color: blue;
+            font-size: 25px;
+            border: 1px solid black;
+        }
+        .parent{
+            background-color: lightslategray;
+        }
+        h1, p{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>General Sibling Selector (~)</h1>
+    <p>This Is General Sibling Selector</p>
+    <p>This Is General Sibling Selector</p>
+    <p>This Is General Sibling Selector</p>
+    <div class="parent">    
+        <p>This Is General Sibling Selector</p>
+        <p>This Is General Sibling Selector</p>
+        <p>This Is General Sibling Selector</p>
+    </div>
+    <p>This Is General Sibling Selector</p>
+    <p>This Is General Sibling Selector</p>
+    <p>This Is General Sibling Selector</p>
+</body>
+</html>

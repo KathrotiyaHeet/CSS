@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child Selector</title>
+    <style>
+        .parent{
+            border: 5px solid blue;
+            background-color: lightyellow;
+        }
+
+        .child{
+            border: 5px solid darkgoldenrod;
+        }
+
+        .parent>p{
+            color: tomato;
+            border: 1px solid black;
+        }
+
+        .child>p{
+            border: 5px solid green;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Child Selector (>)</h1>
+    <div class="parent">
+      <p>This Is A Child Selector</p>
+      <p>This Is A Child Selector</p>
+        
+      <div class="child">
+      <p>This Is A Child Selector</p>
+      <p>This Is A Child Selector</p>      
+      </div>
+
+      <p>This Is A Child Selector</p>
+      <p>This Is A Child Selector</p>
+      
+      
+    </div>
+      <p>This Is A Child Selector</p>
+      <p>This Is A Child Selector</p>
+     
+  </body>
+</html>

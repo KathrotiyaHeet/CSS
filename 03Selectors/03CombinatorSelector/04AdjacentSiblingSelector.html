@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selector</title>
+    <style>
+        .parent+p{
+            color: blue;
+            font-size: 25px;
+            border: 1px solid black;
+        }
+        
+        p+p{
+            color: brown;
+            border: 2px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Adjacent Sibling Selector (+)</h1>
+    <p>(Not Apply)This Is Adjacent Sibling Selector</p>
+    <p>(Apply)This Is Adjacent Sibling Selector</p>
+
+    <div class="parent">    
+
+    <p>(Not Apply)This Is Adjacent Sibling Selector</p>
+    <p>(Apply)This Is Adjacent Sibling Selector</p>
+    <p>(Apply)This Is Adjacent Sibling Selector</p>
+    <p>(Apply)This Is Adjacent Sibling Selector</p>
+    
+    </div>
+
+    <p>(Not Apply)This Is Adjacent Sibling Selector</p>
+    <p>(Apply)This Is Adjacent Sibling Selector</p>
+    <p>(Apply)This Is Adjacent Sibling Selector</p>
+    <p>(Apply)This Is Adjacent Sibling Selector</p>
+   
+  
+</body>
+</html>
