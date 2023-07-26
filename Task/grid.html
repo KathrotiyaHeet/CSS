@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid In CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+
+        .parent {
+            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+        h1 {
+            padding: 50px;
+            text-align: center;
+            padding-bottom: 50px;
+            text-transform: uppercase;
+        }
+
+        .box1 {
+            background-image: url(https://image.shutterstock.com/image-vector/dotted-spiral-vortex-royaltyfree-images-600w-2227567913.jpg);
+            background-size: cover;
+            grid-row: 1/4;
+        }
+
+        .box2 {
+            background-image: url(https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg);
+            background-size: cover;
+            grid-row: 1/3;
+        }
+
+        .box3 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxXnC3fwMwkbIt3ejGRIw3NmbDyUtgS5g2jA&usqp=CAU);
+            background-size: cover;
+            grid-row: 1/4;
+        }
+
+        .box4 {
+            grid-row: 1/3;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVGHL9r9OucwArH8yO3rEDPryG4V3tSCBw-w&usqp=CAU);
+            background-size: cover;
+        }
+
+        .box5 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFBr35nsGltX_wIDUpo4TCQCXGHsnU1P9qUQ&usqp=CAU);
+            background-size: cover;
+            grid-row: 3/6;
+        }
+
+        .box7 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUT2jLYoIC9Lg65AVA5KhEUdJdWFm0-vznZg&usqp=CAU);
+            background-size: cover;
+            grid-row: 4/6;
+        }
+
+        .box8 {
+            grid-row: 4/6;
+        }
+
+        .box6 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRisv-yQgXGrto6OxQxX62JyvyQGvRsQQ760g&usqp=CAU);
+            background-size: cover;
+            grid-row: 4/6;
+        }
+
+        .box10 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhze-QNnca2liBrhRj4CjswGZSkqbhvSDJsQ&usqp=CAU);
+            background-size: cover;
+            background-repeat: no-repeat;
+            grid-row: 3/6;
+        }
+
+        /* -----------------------------Secound Galary--------------------------------- */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent-01 {
+            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(150px, auto);
+        }
+
+        .box-1 {
+            background-image: url(https://www.freecodecamp.org/news/content/images/2022/04/derick-mckinney-oARTWhz1ACc-unsplash.jpg);
+            background-size: cover;
+            grid-column: 1/3;
+        }
+
+        .box-2 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIcxm1tSJphluNimxurlape3Q9nhLcX3_apA&usqp=CAU);
+            background-size: cover;
+            grid-column: 3/4;
+            grid-row: 1/4;
+        }
+
+        .box-3 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAYR-OE5h2M_0wceLIzOJB2S72H-ERugZQpA&usqp=CAU);
+            background-size: cover;
+        }
+
+        .box-4 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHgocFKL7nrTQ6SDRjVIIexUKXiye1Vc0YGA&usqp=CAU);
+            background-size: cover;
+        }
+
+        .box-5 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKeRPJ6Cu_cdiLiDb_ffrn6r0oi09bJXoGyA&usqp=CAU);
+            background-size: cover;
+        }
+
+        .box-6 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6s8SUWJ9Vr681FKY0JlN1ve-CV13jYvEAZQ&usqp=CAU);
+            background-size: cover;
+        }
+
+        /* ---------------------------------------Third Grid----------------------------------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .grid-container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+        .grid-item1 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToJ1TotfvIMaLlKVNPq0cIK5LFeVWj83BRn5_IEgpnQQJ6-UBlU-VZ5z0JIAjnFU0r29g&usqp=CAU);
+            background-size: cover;
+            grid-row: 1/5;
+        }
+
+        .grid-item2 {
+            background-image: url(https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg);
+            background-size: cover;
+            grid-column: 2/4;
+        }
+
+        .grid-item3 {
+            background-image: url(https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=);
+            background-size: cover;
+
+        }
+
+        .grid-item4 {
+            background-image: url(https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+            background-size: cover;
+            grid-row: 2/6;
+        }
+
+        .grid-item5 {
+            background-image: url(https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=);
+            background-size: cover;
+            grid-row: 3/5;
+        }
+
+        .grid-item6 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxIbLIIFoQBMkr2L8qyP0P9VAZK03Are4uAQ&usqp=CAU);
+            background-size: cover;
+        }
+
+        .grid-item7 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxIbLIIFoQBMkr2L8qyP0P9VAZK03Are4uAQ&usqp=CAU);
+            background-size: cover;
+        }
+
+        .grid-item8 {
+            grid-column: 1/4;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxIbLIIFoQBMkr2L8qyP0P9VAZK03Are4uAQ&usqp=CAU);
+            background-size: cover;
+        }
+
+        /* ---------------------------------------Fourth Grid----------------------------------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .maindiv {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(150px, auto);
+        }
+
+        .grid1 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAUgKZoC1kyBi-Z54THVQBnyXyfKBYpGYo2g&usqp=CAU);
+            background-size: cover;
+            grid-row: 1/3;
+        }
+
+        .grid2 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKivvwviZEIWSn37AktW02XYUiufInNC35dQ&usqp=CAU);
+            background-size: cover;
+        }
+
+        .grid3 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvCH4nTux2uaR7vzoaMFF4QCvYG7Pw4a9Xhg&usqp=CAU);
+            background-size: cover;
+            grid-row: 2/4;
+        }
+
+        .grid4 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnnlF6C9sBke3ZAGwE8_H8QVIA8v9z7E89xQ&usqp=CAU);
+            background-size: cover;
+            grid-row: 1/3;
+        }
+
+        .grid5 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSybQ0OgNQ1CoeyBTAIQ7-q1fhG33x-PoJ6lA&usqp=CAU);
+            background-size: cover;
+        }
+
+        .grid6 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLiQr5jhihNFyAVC0mVO4uoyxj1pJVtGMHCqMcvYXpqO-Di09GnChCmW3XoZbEfqcBJac&usqp=CAU);
+            background-size: cover;
+        }
+
+        /* ---------------------------------------Fifth Grid----------------------------------- */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .maindiv1 {
+            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(200px, auto);
+        }
+
+        .grid_1 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpRyYbvGOymn0l2PNdZ5wN7X-n_C02jt9QYXYdlEz0sa-YmDvLacD3TVsfFNHqalpCZaw&usqp=CAU);
+            background-size: cover;
+            grid-column: 1/4;
+        }
+
+        .grid_2 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZMdeSs6hVuOfZqvYC12P28ushQxiAXDP9OQ&usqp=CAU);
+            background-size: cover;
+        }
+
+        .grid_3 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2h71LVsDtRAY8ZpRNd3TK7sF8gbVRmzID8A&usqp=CAU);
+            background-size: cover;
+        }
+
+        .grid_4 {
+            grid-row: 2/4;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1xKOfXZZCcPT2ISHruRyhiV-E-G2RrYO5yw&usqp=CAU);
+            background-size: cover;
+        }
+
+        .grid_5 {
+            grid-column: 2/4;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmdt2tO2Gqm6F1_4tJPkeJ0DpOBeu02z3CBg&usqp=CAU);
+            background-size: cover;
+        }
+
+        .grid_6 {
+            grid-column: 1/4;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiouN03Mpd23-8FUrFoHANjTOKAMDKhRreyA&usqp=CAU);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grid IN CSS 1</h1>
+    <div class="parent">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box10"></div>
+    </div>
+
+    <!-- -----------------------------Secound Galary---------------------------------  -->
+
+    <h1>Grid IN CSS 2</h1>
+    <div class="parent-01">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+        <div class="box-6"></div>
+    </div>
+
+    <!-- -----------------------------Third Galary---------------------------------  -->
+
+    <h1>Grid IN CSS 3</h1>
+    <div class="grid-container">
+        <div class="grid-item1"></div>
+        <div class="grid-item2"></div>
+        <div class="grid-item3"></div>
+        <div class="grid-item4"></div>
+        <div class="grid-item5"></div>
+        <div class="grid-item6"></div>
+        <div class="grid-item7"></div>
+        <div class="grid-item8"></div>
+    </div>
+
+    <!-- -----------------------------Fourth Galary---------------------------------  -->
+
+    <h1>Grid IN CSS 4</h1>
+    <div class="maindiv">
+        <div class="grid1"></div>
+        <div class="grid2"></div>
+        <div class="grid3"></div>
+        <div class="grid4"></div>
+        <div class="grid5"></div>
+        <div class="grid6"></div>
+    </div>
+
+    <!-- -----------------------------Fourth Galary---------------------------------  -->
+
+    <h1>Grid IN CSS 5</h1>
+    <div class="maindiv1">
+        <div class="grid_1"></div>
+        <div class="grid_2"></div>
+        <div class="grid_3"></div>
+        <div class="grid_4"></div>
+        <div class="grid_5"></div>
+        <div class="grid_6"></div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Table In CSS</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      table,th,td{
+        border: 1px solid black;
+      }
+      table{
+        border-collapse: collapse;
+        width: 800px;
+        height: 900px;
+        text-align: center;
+    }
+    th{
+        padding: 10px 0px;
+    }
+    tr>th{
+        background-color: crimson;
+        color: aliceblue;
+    }
+    tr:nth-child(odd){
+        background-color: teal;
+        color: khaki;
+    }
+    tr:nth-child(even){
+        color: teal;
+        background-color: khaki;
+    }
+    .ResponiveTable{
+        width: 500px;
+        height: 600px;
+        margin: 0 auto;
+        border: 10px solid red;
+        overflow: scroll;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="ResponiveTable">
+      <table>
+        <tr>
+          <th>NO.</th>
+          <th>Name</th>
+          <th>Course</th>
+          <th>Phn. Number</th>
+        </tr>
+        <tr>
+          <td>01</td>
+          <td>Manit</td>
+          <td>FD</td>
+          <td>1234567890</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>Saloni</td>
+          <td>FD</td>
+          <td>1234567890</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>Drashti</td>
+          <td>FD</td>
+          <td>1234567890</td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td>Ankit</td>
+          <td>FD</td>
+          <td>1234567890</td>
+        </tr>
+        <tr>
+          <td>05</td>
+          <td>Heet</td>
+          <td>FD</td>
+          <td>1234567890</td>
+        </tr>
+        <tr>
+          <td>06</td>
+          <td>John</td>
+          <td>FD</td>
+          <td>1234567890</td>
+        </tr>
+        <tr>
+          <td>07</td>
+          <td>Thor</td>
+          <td>FD</td>
+          <td>1234567890</td>
+        </tr>
+        <tr>
+          <td>08</td>
+          <td>Iron Men</td>
+          <td>FD</td>
+          <td>1234567890</td>
+        </tr>
+        <tr>
+          <td>09</td>
+          <td>SuperMen</td>
+          <td>FD</td>
+          <td>1234567890</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Katrina</td>
+          <td>FD</td>
+          <td>1234567890</td>
+        </tr>
+        <tr>
+           
+
+      </table>
+    </div>
+  </body>
+</html>

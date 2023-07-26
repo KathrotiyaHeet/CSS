@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border In CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            background-color: darkorange;
+            background-clip: padding-box ;
+            width: 500px;
+            height: 300px;
+            margin:  50px auto;
+            padding: 100px;
+            border: 20px outset black;
+            border-radius: 50px;
+            border-radius: 50%;
+        }
+        .circle{
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy_axSqyyq11x5JqZ_rKbzYcbXLORVp-1nAw&usqp=CAU);
+            border: 20px solid darkgoldenrod;
+            border-radius: 50%;
+        }
+        .image-circle{
+            width: 600px;
+            height: 600px;
+            margin: 50px auto;
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo0LTTeHuqYny67AuejNO5y0EnEFLylRiY5A&usqp=CAU)no-repeat center center/cover;
+            border: 20px solid darkmagenta;
+            text-align: center;
+
+        }
+        p{
+            color: rgb(28, 13, 28);
+            font-size: 50px;
+            font-weight: 600;
+            padding-top: 100px;
+            color: darkblue;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa laboriosam, nam rerum commodi unde minima.
+    </div>
+    <div class="circle"></div>
+    <div class="image-circle"><p>Heet</p></div>
+</body>
+</html>
