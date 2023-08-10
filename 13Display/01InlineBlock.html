@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Block Inline-Block</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        .box{
+            border: 1px solid darkorchid;
+            padding: 50px;
+            display: block;
+            display: inline;
+            display: inline-block;
+        }
+        .parent{
+            font-size: 25px;
+        }
+        .box{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ZcoVewsIBn2QjGJVOzEdX8mGsB_x5q1P3Q&usqp=CAU);
+            color: white;
+        }
+        
+        a,label{
+            color: brown;
+            text-decoration: none;
+        }
+        body{
+            font-size: 25px;
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    BEFORE <br> <br>
+    <div>BLOCK</div> <br> <br>
+    AFTER  <br> <br>
+    <hr>
+    BEFORE <br> <br>
+    <input type="text"> <br> <br>
+    <a href="#">ANCHOR</a>
+    <label for="">LABEL</label> 
+    AFTER <br><br>
+    <hr>
+    <br>
+    <div class="parent">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+</html>
