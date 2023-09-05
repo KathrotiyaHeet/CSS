@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient In CSS</title>
+    <style>
+        div{
+            height: 100px;
+        }
+      .linear-gradient {
+        background: linear-gradient(
+          to left,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+      }
+      .radial-gradient {
+        background: radial-gradient(red, green, yellow);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+      .conic-gradient {
+        background: conic-gradient(red, green, purple);
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+
+
+      .multi {
+    
+
+   background: linear-gradient( 45deg,  red 0 50%, blue 50% 100%);
+
+        background: linear-gradient(45deg, blue, red);
+
+        background: linear-gradient(to left top, blue, red);
+
+        background: linear-gradient(0deg, blue, green 40%, red);
+
+        background: linear-gradient(0.5turn, red, 10%, blue);
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="linear-gradient"></div>
+    <hr>
+    <div class="radial-gradient"></div>
+    <hr>
+    <div class="conic-gradient"></div>
+    <hr>
+    <div class="multi"></div>
+  </body>
+</html>
